@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "320260735254",
+    "project_id": "fypkonnectjob",
+    "storage_bucket": "fypkonnectjob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320260735254:android:96cfa85add4a8b3afdd037",
+        "android_client_info": {
+          "package_name": "com.example.fypkonnectjob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2iRrD9AxDV9xt2QZJgkh_0zFM2Su1U_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
