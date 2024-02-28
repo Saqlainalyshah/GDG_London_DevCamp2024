@@ -1,0 +1,14 @@
+{
+  "Name": "Saqlain Ali Shah",
+  "Age": "22",
+  "Rollno": "079",
+  "Subjects": ["Flutter","React Native","Web development"],
+  "Attributes": {
+    "Color": "Black",
+    "Height": 6.4,
+    "Face": {
+      "Eyes": "black",
+      "HairColor": "brown"
+    }
+  }
+}

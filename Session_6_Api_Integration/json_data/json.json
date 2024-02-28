@@ -1,0 +1,66 @@
+{ "results": [
+  { "gender":"female",
+    "name":{
+      "title":"Mademoiselle",
+      "first":"Fabiana",
+      "last":"Dufour"
+    },
+    "location":{
+      "street": {
+        "number":7970,
+        "name":"Esplanade du 9 Novembre 1989"
+
+      },
+      "city":"Lupsingen",
+      "state":"Thurgau",
+      "country":"Switzerland",
+      "postcode":3892,
+      "coordinates":{
+        "latitude":"-60.4403",
+        "longitude":"17.6525"
+      },
+      "timezone":{
+        "offset":"+5:45",
+        "description":"Kathmandu"
+      }
+    },
+    "email":"fabiana.dufour@example.com",
+    "login":{
+      "uuid":"534cc28c-9f0b-4c91-996a-8a6cf358dbad",
+      "username":"redleopard663",
+      "password":"helpme",
+      "salt":"0cQWLewI",
+      "md5":"0546d50d219f576b388afb5e3fc89daa",
+      "sha1":"eab231673f44a9254d33ebee49e2c3b9df6cc59a",
+      "sha256":"c3b273e1ea172252bc04a610b0dc9588cf07336771aa20da2f2efeea128fff7b"
+
+    },
+    "dob":{
+      "date":"1969-05-07T09:47:15.086Z",
+      "age":54
+
+    },
+    "registered":{
+      "date":"2017-12-20T11:57:45.280Z",
+      "age":5
+
+    },
+    "phone":"077 866 85 60",
+    "cell":"076 262 59 16",
+    "id":{
+      "name":"AVS",
+      "value":"756.1615.8190.72"
+
+    },
+    "picture":{
+      "large":"https://randomuser.me/api/portraits/women/91.jpg",
+      "medium":"https://randomuser.me/api/portraits/med/women/91.jpg",
+      "thumbnail":"https://randomuser.me/api/portraits/thumb/women/91.jpg"},
+    "nat":"CH"}
+   ],
+  "info":{
+    "seed":"21df2afa971a5fd4",
+    "results":1,
+    "page":1,
+    "version":"1.4"}
+}
