@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learning_app/screen_body/welcome_teacher_student.dart';
 import 'package:learning_app/widgets/custom_appBar.dart';
@@ -9,10 +8,11 @@ class WelcomeTeacherStudent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: CustomAppBar(title: "Choose Option",leadingTitle: "",),
-      body: SingleChildScrollView(
-          child: WelcomeTeacherStudentBody()
+      appBar: CustomAppBar(
+        title: "Choose Option",
+        leadingTitle: "",
       ),
+      body: SingleChildScrollView(child: WelcomeTeacherStudentBody()),
     );
   }
 }

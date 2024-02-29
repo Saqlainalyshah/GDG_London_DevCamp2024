@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learning_app/widgets/Text_Widget.dart';
 
@@ -29,68 +28,67 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10 / 2.5),
-           child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Center(
-                    child: leadingTitle == null
-                        ?  InkWell(
-                          onTap: (){
-                            Navigator.pop(context);
-                          },
-                            child: const Icon(
-                              Icons.arrow_back,
-                              color: Colors.teal,
-                              size: 25.0,
-                            ),
-                          )
-                        : Center(
-                            child: TextWidget(
-                              text: leadingTitle.toString(),
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: color,
-                            ),
-                          )
-                ),
-                Center(
-                  child: TextWidget(
-                    text: title,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                Container(
-                    child:
-                        (trailingIconWidget1 == null && trailingIconWidget2 == null)
-                            ? Center(
-                                child: TextWidget(
-                                  text: trailingTitle,
-                                  fontSize: 15,
-                                  color: Colors.black,
-                                ),
-                              )
-                            : Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Center(
-                                    child: trailingIconWidget1,
-                                  ),
-                                  Center(
-                                    child: trailingIconWidget2,
-                                  ),
-                                ],
-                              )!)
-              ],
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10 / 2.5),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+              child: leadingTitle == null
+                  ? InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Icon(
+                        Icons.arrow_back,
+                        color: Colors.teal,
+                        size: 25.0,
+                      ),
+                    )
+                  : Center(
+                      child: TextWidget(
+                        text: leadingTitle.toString(),
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: color,
+                      ),
+                    )),
+          Center(
+            child: TextWidget(
+              text: title,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
-          ));
-        }
+          ),
+          Container(
+              child:
+                  (trailingIconWidget1 == null && trailingIconWidget2 == null)
+                      ? Center(
+                          child: TextWidget(
+                            text: trailingTitle,
+                            fontSize: 15,
+                            color: Colors.black,
+                          ),
+                        )
+                      : Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Center(
+                              child: trailingIconWidget1,
+                            ),
+                            Center(
+                              child: trailingIconWidget2,
+                            ),
+                          ],
+                        ))
+        ],
+      ),
+    ));
+  }
 
-        @override
-        // TODO: implement preferredSize
-        Size get preferredSize => const Size(double.maxFinite, 65);
-      }
+  @override
+  // TODO: implement preferredSize
+  Size get preferredSize => const Size(double.maxFinite, 65);
+}

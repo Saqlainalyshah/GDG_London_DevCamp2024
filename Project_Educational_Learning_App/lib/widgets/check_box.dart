@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learning_app/widgets/Text_Widget.dart';
 
@@ -27,7 +26,8 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
     }
 
     return Row(
-      children: [ // Use the text argument here
+      children: [
+        // Use the text argument here
         Checkbox(
           checkColor: Colors.white,
           fillColor: MaterialStateProperty.resolveWith(getColor),
@@ -38,7 +38,10 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
             });
           },
         ),
-        TextWidget(text: widget.title,fontSize: 13,),
+        TextWidget(
+          text: widget.title,
+          fontSize: 13,
+        ),
       ],
     );
   }

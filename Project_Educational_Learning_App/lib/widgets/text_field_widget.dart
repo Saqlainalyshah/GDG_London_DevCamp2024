@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learning_app/widgets/Text_Widget.dart';
 
@@ -11,7 +10,7 @@ class TextFieldWidget extends StatelessWidget {
     this.size = 20.0,
     this.result = false,
     this.trailingIcon,
-    this.hintText=" ",
+    this.hintText = " ",
     this.errorText,
     this.onChanged,
     this.onTap,
@@ -40,7 +39,7 @@ class TextFieldWidget extends StatelessWidget {
       onTap: onTap, // Pass the onTap function to the TextFormField
       style: Theme.of(context).textTheme.labelMedium,
       decoration: InputDecoration(
-        errorText: errorText?? null,
+        errorText: errorText,
         focusColor: Colors.black,
         contentPadding: const EdgeInsets.only(left: 10, right: 15),
         border: OutlineInputBorder(
@@ -52,17 +51,17 @@ class TextFieldWidget extends StatelessWidget {
         prefixIcon: leadingIcon == null
             ? const TextWidget(text: "")
             : Icon(
-          leadingIcon,
-          color: Colors.black38,
-          size: size,
-        ),
+                leadingIcon,
+                color: Colors.black38,
+                size: size,
+              ),
         suffixIcon: trailingIcon == null
             ? const TextWidget(text: "")
             : Icon(
-          trailingIcon,
-          color: Colors.black38,
-          size: size,
-        ),
+                trailingIcon,
+                color: Colors.black38,
+                size: size,
+              ),
         hintText: hintText,
         hintStyle: Theme.of(context).textTheme.labelMedium,
       ),
@@ -81,12 +80,10 @@ class SimpleTextFieldWidget extends StatelessWidget {
       cursorWidth: 1.0,
       cursorColor: Colors.black,
       controller: controller,
-      style: const TextStyle(
-          color: Colors.black,fontSize: 13),
+      style: const TextStyle(color: Colors.black, fontSize: 13),
       decoration: InputDecoration(
-        contentPadding:
-            const EdgeInsets.only(left: 10,right: 15),
-        border:  OutlineInputBorder(
+        contentPadding: const EdgeInsets.only(left: 10, right: 15),
+        border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(10),
         ),
