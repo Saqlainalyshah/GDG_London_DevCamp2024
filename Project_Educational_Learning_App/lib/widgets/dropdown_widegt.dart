@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:learning_app/widgets/Text_Widget.dart';
 
 class CustomDropdownButton extends StatefulWidget {
-        String? selectedValue;
-        final String hintText;
-        final List<String> dropdownItems;
+  String? selectedValue;
+  final String hintText;
+  final List<String> dropdownItems;
 
   CustomDropdownButton({
-    this.hintText='',
+    super.key,
+    this.hintText = '',
     required this.selectedValue,
     required this.dropdownItems,
   });
@@ -20,11 +21,11 @@ class _CustomDropdownButtonState extends State<CustomDropdownButton> {
   Widget build(BuildContext context) {
     return DropdownButtonFormField<String>(
       value: widget.selectedValue,
-     // isExpanded: true,
+      // isExpanded: true,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(horizontal: 10.0),
         labelText: widget.hintText,
-        labelStyle: TextStyle(fontSize: 11),
+        labelStyle: const TextStyle(fontSize: 11),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(10.0),
@@ -38,15 +39,17 @@ class _CustomDropdownButtonState extends State<CustomDropdownButton> {
           widget.selectedValue = newValue;
         });
       },
-      items: widget.dropdownItems.map<DropdownMenuItem<String>>(
-              (String value) {
-                return DropdownMenuItem<String>(
-                  onTap: (){
-                    print(value);
-                  },
-                  value: value,
-                  child: TextWidget(text:value,fontSize: 11,),
-                );
+      items: widget.dropdownItems.map<DropdownMenuItem<String>>((String value) {
+        return DropdownMenuItem<String>(
+          onTap: () {
+            print(value);
+          },
+          value: value,
+          child: TextWidget(
+            text: value,
+            fontSize: 11,
+          ),
+        );
       }).toList(),
     );
   }
